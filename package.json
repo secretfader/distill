@@ -1,0 +1,34 @@
+{
+  "name": "distill",
+  "version": "0.0.1",
+  "description": "A simple JSON cleaner/reformatter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nicholaswyoung/sterile.git"
+  },
+  "keywords": [
+    "json",
+    "serializer",
+    "serializer",
+    "json",
+    "sterilizer",
+    "json"
+  ],
+  "author": "Nicholas Young",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicholaswyoung/sterile/issues"
+  },
+  "homepage": "https://github.com/nicholaswyoung/sterile",
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "chai": "^1.9.1"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}
