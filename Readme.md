@@ -22,7 +22,8 @@ var data    = {
 var output = distill.filter(data)
   .field('id')
   .field('title')
-  .embed('authors', 'id');
+  .embed('authors', 'id')
+  .finalize();
 ```
 
 With a simple, pleasurable DSL, Distill turns this previously frustrating task into a few lines of readable code.
