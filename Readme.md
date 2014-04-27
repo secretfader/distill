@@ -28,6 +28,18 @@ var output = distill.filter(data)
 
 With a simple, pleasurable DSL, Distill turns this previously frustrating task into a few lines of readable code.
 
+## Contributing
+
+Distill is far from finished. I built out the core idea, and left it at that. I need for it to do more (like serializing arrays, and standard configurations for serialization). You probably do too. I'm very open to pull requests, but here are a couple of suggestions that will help me maintain this module:
+
+1. Fork the repository, and do all of your work in a feature branch.
+
+2. Don't change the API without notifying me. Breaking changes are totally fine, but we should establish a sane upgrade path first.
+
+3. Document and test your changes.
+
+4. Send that pull request!
+
 ## License
 
 Copyright (C) Nicholas Young, Original Machine LLC.
