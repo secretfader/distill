@@ -43,22 +43,23 @@ module.exports = {
     'it should embed ids for array fields': function () {
       this.input = _.extend(this.input, {
         shows: [
-          { id: 1, name: 'Inside the Machine' },
-          { id: 2, name: 'Inside the Machine' },
-          { id: 3, name: 'Inside the Machine' }
+          { id: 1, name: 'Inside the Machine', desc: 'Yo' },
+          { id: 2, name: 'Inside the Machine', desc: 'Hi' },
+          { id: 3, name: 'Inside the Machine', desc: 'Distill is simple!' }
         ]
       });
 
       var data =
         distill.filter(this.input)
           .field('title')
-          .embed('shows', 'id')
+          .embed('shows', ['id', 'desc'])
           .finalize();
 
       expect(data).to.have.property('title');
       expect(data).to.have.property('shows');
       expect(data.shows).to.have.length(3);
       expect(data.shows[0]).to.have.property('id');
+      expect(data.shows[0]).to.have.property('desc');
       expect(data.shows[0]).to.not.have.property('title');
     }
   }
