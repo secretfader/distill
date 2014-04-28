@@ -8,7 +8,7 @@ Distill is a simple library that helps you clean up dirty JSON objects. For inst
 
 ```javascript
 var distill = require('distill');
-var data    = {
+var data = {
   id: 1,
   title: 'Hello, World',
   dirty_field: 'This field should not be exposed.',
@@ -19,14 +19,24 @@ var data    = {
   }
 };
 
-var output = distill.filter(data)
-  .field('id')
-  .field('title')
-  .embed('authors', 'id')
-  .finalize();
+var output =
+  distill(data)
+    .field('id')
+    .field('title')
+    .embed('authors', 'id')
+    .bottle();
+
+// Output
+{
+  id: 1,
+  title: 'Hello, World',
+  authors: [
+    { id: 2 }
+  ]
+}
 ```
 
-With a simple, pleasurable DSL, Distill turns this previously frustrating task into a few lines of readable code.
+With a simple, pleasurable DSL, Distill turns this previously frustrating task into a few lines of readable code. You can pass either a single object or array of objects into the ```distill``` method.
 
 ## Contributing
 
