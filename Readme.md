@@ -40,7 +40,7 @@ With a simple, pleasurable DSL, Distill turns this previously frustrating task i
 
 ## Contributing
 
-Distill is far from finished. I built out the core idea, and left it at that. I need for it to do more (like serializing arrays, and standard configurations for serialization). You probably do too. I'm very open to pull requests, but here are a couple of suggestions that will help me maintain this module:
+Distill is far from finished. I built out the core idea, and left it at that. I need for it to do more (like standard configurations for serialization). You probably do too. I'm very open to pull requests, but here are a couple of suggestions that will help me maintain this module:
 
 1. Fork the repository, and do all of your work in a feature branch.
 
