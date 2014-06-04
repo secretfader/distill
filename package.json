@@ -1,6 +1,6 @@
 {
   "name": "distill",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple JSON cleaner/reformatter.",
   "main": "lib/index.js",
   "scripts": {
