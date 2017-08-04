@@ -1,5 +1,7 @@
 # Distill
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nicholaswyoung/distill.svg)](https://greenkeeper.io/)
+
 Remove impurities from your JSON objects with ease.
 
 ## Usage
